@@ -1,0 +1,27 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+.parent-child {
+    position: relative;
+}
+
+.expand-child {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.parent-child ul.children {
+    overflow: hidden;
+    max-height: 0;
+    
+    transition-property: all;
+	transition-duration: .5s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
+.parent-child.show-children ul.children {
+    
+}
